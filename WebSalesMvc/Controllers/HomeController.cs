@@ -23,6 +23,14 @@ namespace WebSalesMvc.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            ViewData["Menssagem"] = "Descrição da sua aplicação";
+            ViewData["Professor"] = "Sukahoy";
+
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
