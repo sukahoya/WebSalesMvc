@@ -133,6 +133,10 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
+      "Id": "D:\\ti\\Cursos\\CSharp\\WebSalesMvc\\WebSalesMvc\\WebSalesMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min_flatly.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min_flatly.css"
+    },
+    {
       "Id": "D:\\ti\\Cursos\\CSharp\\WebSalesMvc\\WebSalesMvc\\WebSalesMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
@@ -147,6 +151,10 @@
     {
       "Id": "D:\\ti\\Cursos\\CSharp\\WebSalesMvc\\WebSalesMvc\\WebSalesMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ti\\Cursos\\CSharp\\WebSalesMvc\\WebSalesMvc\\WebSalesMvc\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap_Flatly.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap_Flatly.css"
     },
     {
       "Id": "D:\\ti\\Cursos\\CSharp\\WebSalesMvc\\WebSalesMvc\\WebSalesMvc\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",

@@ -1,9 +1,19 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using System.Configuration;
 using WebSalesMvc.Data;
 var builder = WebApplication.CreateBuilder(args);
+
+/*builder.Services.AddDbContext<WebSalesMvcContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("WebSalesMvcContext") ?? throw new InvalidOperationException("Connection string 'WebSalesMvcContext' not found.")));
+*/
+
 builder.Services.AddDbContext<WebSalesMvcContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("WebSalesMvcContext") ?? throw new InvalidOperationException("Connection string 'WebSalesMvcContext' not found.")));
+        options.UseNpgsql(builder.Configuration.GetConnectionString("WebSalesMvcContext"), x => x.MigrationsAssembly("WebSalesMvc")));
+
+/*options.UseNpgsql(Configuration.GetConnectionString("WebSalesMvcContext"), builder =>
+    builder.MigrationsAssembly("WebSalesMvc" ?? throw new InvalidOperationException("Connection string 'WebSalesMvcContext' not found.")));*/
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
